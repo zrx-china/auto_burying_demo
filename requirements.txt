@@ -1,0 +1,6 @@
+appium-python-client==4.0.0
+mitmproxy==10.3.0
+flask==2.2.5
+werkzeug==2.2.3
+pandas>=1.5
+openpyxl
