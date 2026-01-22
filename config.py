@@ -21,24 +21,28 @@ CONFIG = {
     "proxy_port": 8080,
 
     # ========== 埋点域名 ==========
-    # "tracking_domains": [
-    #     "ad.mcloud.139.com",
-    #     "dc.cmicapm.com",
-    #     "data.cmicapm.com",
-    #     "ai.yun.139.com",
-    #     "group.yun.139.com",
-    #     "middle.yun.139.com",
-    #     "mrp.139.com",
-    #     "online-njs.yun.139.com",
-    #     "ose.caiyun.feixin.10086.cn",
-    #     "personal-kd-njs.yun.139.com",
-    #     "vsbo.caiyun.feixin.10086.cn",
-    #     "ypqy.mcloud.139.com",
-    #     "ael.yun.139.com"
-    # ],
+    "tracking_domains": [
+        "ad.mcloud.139.com",
+        "dc.cmicapm.com",
+        "data.cmicapm.com",
+        "ai.yun.139.com",
+        "group.yun.139.com",
+        "middle.yun.139.com",
+        "mrp.139.com",
+        "online-njs.yun.139.com",
+        "ose.caiyun.feixin.10086.cn",
+        "personal-kd-njs.yun.139.com",
+        "vsbo.caiyun.feixin.10086.cn",
+        "ypqy.mcloud.139.com",
+        "ael.yun.139.com"
+    ],
 
     # ========== 遍历参数 ==========
     "max_depth": 1,              # 最大遍历深度 (推荐 1-3)
-    "page_wait": 2               # 每页等待时间(秒)
+    "page_wait": 2,               # 每页等待时间(秒)
+    "coord_threshold": 30,         # 坐标去重阈值（像素）
     # "max_clicks_per_page": 3      # 每页最多点击多少个元素
+
+    # ... 其他配置 ...
+    "debug_tap": False  # 开启点击调试
 }
